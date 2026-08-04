@@ -370,6 +370,7 @@
 }
 
 .site-header__logo-sub {
+  display: none;
   font-size: 10px;
   letter-spacing: 0.12em;
   color: var(--color-caption-alt);
@@ -382,6 +383,11 @@
   gap: 10px;
 }
 
+.site-header__actions .btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .site-header__back-link {
   display: none;
   font-size: 12px;
@@ -390,6 +396,10 @@
 }
 
 @media (min-width: 640px) {
+  .site-header__logo-sub {
+    display: inline;
+  }
+
   .site-header__back-link {
     display: inline;
   }
@@ -399,6 +409,7 @@
 .menu-toggle {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   justify-content: center;
   gap: 5px;
   width: 44px;
