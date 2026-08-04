@@ -1261,7 +1261,7 @@
 }
 
 /* ---------- Message ---------- */
-.message-copy h2 {
+.message-copy > h2 {
   margin: 0 0 20px;
   font-family: var(--font-heading-jp);
   font-weight: 500;
@@ -1271,7 +1271,7 @@
   text-wrap: pretty;
 }
 
-.message-copy p {
+.message-copy > p {
   margin: 0 0 16px;
   font-size: 15px;
   line-height: 2.1;
@@ -1279,7 +1279,7 @@
   text-align: left;
 }
 
-.message-copy p:last-child {
+.message-copy > p:last-child {
   margin-bottom: 0;
 }
 
