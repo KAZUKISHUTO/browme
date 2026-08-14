@@ -988,6 +988,7 @@
 }
 
 .store-card__media {
+  position: relative;
   height: 180px;
 }
 
@@ -1937,4 +1938,66 @@
   flex-wrap: wrap;
   gap: 14px;
   justify-content: center;
+}
+
+/* ---------- Legal / policy prose ---------- */
+.legal-updated {
+  margin: 0 0 40px;
+  font-size: 13px;
+  color: var(--color-caption-alt);
+}
+
+.legal-block {
+  padding: 28px 0;
+  border-top: 1px solid #E5DED1;
+}
+
+.legal-block:last-child {
+  border-bottom: 1px solid #E5DED1;
+}
+
+.legal-block h2 {
+  margin: 0 0 16px;
+  font-family: var(--font-heading-jp);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--color-heading);
+}
+
+.legal-block p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--color-body);
+}
+
+.legal-block p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-block ul,
+.legal-block ol {
+  margin: 0 0 14px;
+  padding-left: 1.3em;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--color-body);
+}
+
+.legal-block li {
+  margin-bottom: 6px;
+}
+
+.legal-block li:last-child {
+  margin-bottom: 0;
+}
+
+.legal-contact {
+  margin-top: 6px;
+  border-top: 1px solid #E5DED1;
+}
+
+.legal-contact .company-table__row:last-child {
+  border-bottom: none;
 }
