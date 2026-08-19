@@ -1,0 +1,154 @@
+/* ===========================================================
+   WordPress-specific additions — kept separate from the ported
+   base.css / style.css so the original design files stay a clean diff.
+   =========================================================== */
+
+/* ---------- Core a11y / editor classes WP expects every theme to style ---------- */
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.alignleft {
+  float: left;
+  margin: 4px 24px 16px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 4px 0 16px 24px;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-size: 12px;
+  color: var(--color-caption);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ---------- Contact Form 7 ---------- */
+.contact-form .wpcf7-form {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-form .wpcf7-form-control-wrap {
+  display: contents;
+}
+
+.contact-form .wpcf7-not-valid-tip {
+  display: block;
+  font-size: 12px;
+  color: #b3413b;
+  margin-top: 4px;
+}
+
+.contact-form .wpcf7-submit {
+  min-height: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-form .wpcf7-spinner {
+  margin: 0 0 0 10px;
+}
+
+.contact-form .wpcf7-response-output {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-heading);
+  background: #ffffff;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-card);
+  padding: 12px;
+}
+
+.contact-form form.invalid .wpcf7-response-output,
+.contact-form form.aborted .wpcf7-response-output,
+.contact-form form.spam .wpcf7-response-output,
+.contact-form form.failed .wpcf7-response-output {
+  border-color: #b3413b;
+  color: #b3413b;
+}
+
+/* ---------- Legal / WYSIWYG page content (Privacy Policy) ---------- */
+.legal-content h2 {
+  font-family: var(--font-heading-jp);
+  font-size: 17px;
+  color: var(--color-heading);
+  margin: 40px 0 14px;
+}
+
+.legal-content p {
+  margin: 0 0 14px;
+  color: var(--color-body);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.legal-content ul {
+  margin: 0 0 14px;
+  padding-left: 1.4em;
+  color: var(--color-body);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.legal-content li {
+  margin-bottom: 4px;
+}
+
+.legal-content a {
+  text-decoration: underline;
+}
+
+/* ---------- News archive / single article ---------- */
+.article-meta {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--color-caption);
+  margin: 0 0 24px;
+}
+
+.article-body {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--color-body);
+}
+
+.article-body p {
+  margin: 0 0 20px;
+}
+
+.article-body img {
+  border-radius: var(--radius-photo);
+  margin: 8px 0 24px;
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  font-size: 13px;
+}
